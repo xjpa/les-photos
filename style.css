@@ -1,0 +1,71 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: darkblue;
+    color: white
+}
+
+a{
+    color: white; /*change default blue link to white*/
+    text-decoration: none; 
+    /*remove default underline for links*/
+}
+
+section{
+    height: 100vh; /*set the height relative to the browser*/
+    /*vh means viewport height
+    viewport - the area of the window in which web content can be seen in the browser
+    100vh - means full height of browser window
+    50vh - means half the height
+
+    vw - viewport width
+    */
+    background-image: url(assets/1.jpeg);
+    background-size: cover; 
+    /*cover: to cover the full width/height of this given section without skew or repeating */
+    background-attachment: fixed; 
+    /*for cool reveal effect or maybe it's more apt to say parallax effect. basically fixes the picture to the viewport rather than the stacks of sections (? - not sure if right word, i need to learn more the internals of HTML/CSS)*/
+}
+
+header{
+    /*got a new selector for header cos i got to put it on top of photos*/
+    position: fixed; /*fixes element to browser viewport, by default in HTML things start in top left element, so we got to change it with top/left:*/
+    top: 20px;
+    left: 20px;
+}
+
+footer{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+h1{
+    margin-bottom: 5px; /*small enough space for h1 and <p>*/
+}
+
+footer a{
+    /*just for anchor tags inside footer*/
+    margin-right: 5px;
+    font-weight: 900;
+}
+
+a:hover{
+    /*pseudo class selector
+    https://www.w3schools.com/css/css_pseudo_classes.asp
+    selector for me to change color of hovered links/anchors
+    */
+    color: rgb(197, 141, 29)
+}
+
+.image_02{
+    background-image: url(assets/2.jpeg);
+}
+
+.image_03{
+    background-image: url(assets/3.jpeg);
+}
+
+.image_04{
+    background-image: url(assets/4.jpeg);
+}
